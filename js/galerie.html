@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mb-5 mt-5">Galerie</h1>
+        <div class="row">
+            <div class="col"><img src="images/a.jpg" alt="" class="img-fluid"></div>
+            <div class="col"><img src="images/b.jpg" alt="" class="img-fluid"></div>
+            <div class="col"><img src="images/c.jpg" alt="" class="img-fluid"></div>
+            <div class="col"><img src="images/d.jpg" alt="" class="img-fluid"></div>
+            
+        </div>
+    </div>
+<div id="body-pop">
+  
+    <div class="text-center"><button id="prev">prev</button><img src="" alt=""><button id="next">next</button>
+      
+    </div>
+</div>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script>
+  const largeur =   $(window).width()
+  const hauteur =   $(window).height()
+
+  $('img.img-fluid').click(function(){
+    $('#body-pop').css('display','flex')
+    
+    const src = $(this).attr('src')
+    $('#body-pop img').attr('src',src)
+    const imgL  = $('#body-pop img').width()
+    const imgH  = $('#body-pop img').height()
+    
+    
+    if(imgL >imgH){
+      if(imgL > (largeur - 100)){
+          $('#body-pop img').css('width',(largeur-200)+'px')
+        }
+    }
+  else{
+      if(imgH > (hauteur - 50)){
+          $('#body-pop img').css('height',(hauteur-100)+'px')
+        }
+  }
+  
+  })
+  /*
+  $('#body-pop').click(function(){
+    $(this).css('display','none')
+  })
+*/
+
+   const img = ['images/a.jpg','images/b.jpg','images/c.jpg','images/d.jpg']
+   
+  
+   $('#next').click(function(){
+   var src = $('#body-pop img').attr('src')
+   
+   if(src == 'images/a.jpg'){
+
+    $('#body-pop img').attr('src','images/b.jpg')
+
+   }
+else if(src == 'images/b.jpg'){
+   $('#body-pop img').attr('src','images/c.jpg')
+   
+}
+else if(src == 'images/c.jpg'){
+  $('#body-pop img').attr('src','images/d.jpg')
+  
+}
+else if(src == 'images/d.jpg'){
+  $('#body-pop img').attr('src','images/a.jpg')
+  
+}
+})
+
+$('#prev').click(function(){
+  
+  srd = $('#body-pop img').attr('src')
+   
+   if(srd == 'images/a.jpg'){
+
+    $('#body-pop img').attr('src','images/d.jpg')
+
+   }
+else if(srd == 'images/d.jpg'){
+   $('#body-pop img').attr('src','images/c.jpg')
+   
+}
+else if(srd == 'images/c.jpg'){
+  $('#body-pop img').attr('src','images/b.jpg')
+  
+}
+else if(srd == 'images/b.jpg'){
+  $('#body-pop img').attr('src','images/a.jpg')
+  
+}
+})
+
+</script>
+</body>
+</html>

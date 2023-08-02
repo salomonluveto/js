@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol>li{
+            font-size: 16px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+   <h1>Formation javascript</h1> 
+   <button onclick="imprimer()">Ouvrir</button><br/><br/>
+   <button onclick="go_to()">Table</button><br/><br/>
+   <button onclick="retour()">Retour</button><br/><br/>
+   <button onclick="suivant()">suivant</button><br/><br/>
+   <div id="content"></div>
+
+   <ol>
+    <li>Css</li>
+    <li>PHP</li>
+    <li>VB</li>
+    <li>Python</li>
+    <li>Java</li>
+   </ol>
+   <img src="images/a.jpg" alt="" width="300px">
+   <section>
+
+        <h2>Titre 2</h2>
+        <div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ea, quia ratione perferendis voluptate quos voluptatibus! At iste culpa veniam sequi a! Quidem iusto, nihil delectus iure recusandae libero hic?</p>
+            <p>Consequatur rem sequi illo doloremque, molestias dolorum deleniti quam ab aperiam pariatur ducimus deserunt facere quasi fuga. Vel doloribus consequuntur rerum animi tenetur ut, nesciunt beatae accusantium molestiae nemo et.</p>
+            <p>Minus dolor ipsum reiciendis architecto maiores. Fugit rem ex, maxime et accusamus enim quod, eos veniam, omnis ducimus assumenda. Rerum labore et perferendis possimus eius fuga excepturi dicta sed ex.</p>
+            <p>Enim tenetur perspiciatis beatae vero accusantium ipsam itaque, natus ducimus atque. Atque quam numquam tenetur corporis dignissimos reprehenderit odit inventore officia, at iure. Itaque, corporis natus! Possimus a ut non.</p>
+        </div>
+   </section>
+
+   <section>
+    <h2>Titre 2</h2>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ea, quia ratione perferendis voluptate quos voluptatibus! At iste culpa veniam sequi a! Quidem iusto, nihil delectus iure recusandae libero hic?</p>
+        <p>Consequatur rem sequi illo doloremque, molestias dolorum deleniti quam ab aperiam pariatur ducimus deserunt facere quasi fuga. Vel doloribus consequuntur rerum animi tenetur ut, nesciunt beatae accusantium molestiae nemo et.</p>
+        <p>Minus dolor ipsum reiciendis architecto maiores. Fugit rem ex, maxime et accusamus enim quod, eos veniam, omnis ducimus assumenda. Rerum labore et perferendis possimus eius fuga excepturi dicta sed ex.</p>
+        <p>Enim tenetur perspiciatis beatae vero accusantium ipsam itaque, natus ducimus atque. Atque quam numquam tenetur corporis dignissimos reprehenderit odit inventore officia, at iure. Itaque, corporis natus! Possimus a ut non.</p>
+    </div>
+</section>
+
+<section id="section3">
+    <h2>Titre 2</h2>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ea, quia ratione perferendis voluptate quos voluptatibus! At iste culpa veniam sequi a! Quidem iusto, nihil delectus iure recusandae libero hic?</p>
+        <p>Consequatur rem sequi illo doloremque, molestias dolorum deleniti quam ab aperiam pariatur ducimus deserunt facere quasi fuga. Vel doloribus consequuntur rerum animi tenetur ut, nesciunt beatae accusantium molestiae nemo et.</p>
+        <p>Minus dolor ipsum reiciendis architecto maiores. Fugit rem ex, maxime et accusamus enim quod, eos veniam, omnis ducimus assumenda. Rerum labore et perferendis possimus eius fuga excepturi dicta sed ex.</p>
+        <p>Enim tenetur perspiciatis beatae vero accusantium ipsam itaque, natus ducimus atque. Atque quam numquam tenetur corporis dignissimos reprehenderit odit inventore officia, at iure. Itaque, corporis natus! Possimus a ut non.</p>
+    </div>
+</section>
+
+<section id="section4">
+    <h2>Titre 2</h2>
+    <div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod ea, quia ratione perferendis voluptate quos voluptatibus! At iste culpa veniam sequi a! Quidem iusto, nihil delectus iure recusandae libero hic?</p>
+        <p>Consequatur rem sequi illo doloremque, molestias dolorum deleniti quam ab aperiam pariatur ducimus deserunt facere quasi fuga. Vel doloribus consequuntur rerum animi tenetur ut, nesciunt beatae accusantium molestiae nemo et.</p>
+        <p>Minus dolor ipsum reiciendis architecto maiores. Fugit rem ex, maxime et accusamus enim quod, eos veniam, omnis ducimus assumenda. Rerum labore et perferendis possimus eius fuga excepturi dicta sed ex.</p>
+        <p>Enim tenetur perspiciatis beatae vero accusantium ipsam itaque, natus ducimus atque. Atque quam numquam tenetur corporis dignissimos reprehenderit odit inventore officia, at iure. Itaque, corporis natus! Possimus a ut non.</p>
+    </div>
+</section>
+<button onclick="Haut()">Haut</button>
+<script src="js/hello.js" type="module"></script>
+<script src="js/script.js" ></script>
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+
+<script type="module">
+   // import{hello,salut as message} from './js/hello.js'
+   /*import * as message from './js/hello.js'
+    import User from './js/user.js'
+    let user = new User('marc')
+    alert(user.presentation())
+    
+    message.hello()
+    */
+</script>
+<script>
+    /*
+    $('h1').css('color','blue')
+    $('h2').css('font-style','italic')
+    */
+    /*
+    $('h2').css({
+        fontStyle:'italic', 
+        color : 'green'
+    })
+    $('#content').html('<p>Test<b> jquery</b></p>')
+    $('h1').text('Formation Jquery')
+    $('h1').click(function(){
+        $('p').hide()
+    })
+    $('h2').click(function(){
+        $('p').show()
+    })
+    */
+    /*
+    $('h1').click(function(){
+        $('p').fadeOut(2000)
+    })
+    $('h2').click(function(){
+        $('p').fadeIn(2000)
+    })
+    */
+    /*
+    $('h1').click(function(){
+        $('p').slideUp(2000)
+    })
+    $('h2').click(function(){
+        $('p').slideDown(2000)
+    })
+    */
+    /*
+    $('h1').click(function(){
+        $('section:eq(0)').slideToggle(2000)
+    })
+    $('h2').click(function(){
+        $('p').slideDown(2000)
+    })
+    let atr = $('section:eq(3)').attr('id')
+    alert(atr)
+    */
+    //animation
+    /*
+$('img').click(function(){
+    $(this).animate({
+        width:'600px',
+        borderRadius:'40%'
+    },3000)
+})
+$('img').dblclick(function(){
+    $(this).animate({
+        width:'300px',
+        borderRadius:'0%'
+    },1000)
+})   
+let position = $('img').offset()
+alert(position.left+' - '+position.top)
+*/
+
+$('h1').draggable()
+$('ol').sortable()
+</script>
+</body>
+</html>

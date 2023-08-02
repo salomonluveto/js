@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <style>
+        table {
+            border: 1px solid silver;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table th, table td {
+            padding: 20px;
+            border: 1px solid silver;
+        }
+    </style>
+</head>
+<body onload="getArticles()">
+    <h1 onclick="hello()" onmouseover="salut()">Articles</h1>
+    <form action="" method="post" onsubmit="creer(event)" id = "registerForm">
+<p>
+    Titre : <input type="text" name = "title">
+</p>
+<p>
+    User : <input type="number" name = "userId" id="">
+</p>
+
+<p>
+    Contenu: <textarea name = "body" id = "" cols="30" rows="10"></textarea>
+</p>
+<p>
+    <button type="submit">Enregistrer</button>
+</p>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>Titre</th>
+                <th>Contenu</th>
+                <th>User</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script src="js/script.js"></script>
+</body>
+</html>
